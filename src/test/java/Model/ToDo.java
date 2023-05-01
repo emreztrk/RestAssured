@@ -1,25 +1,25 @@
 package Model;
 
-public class Story {
-    int userID;
-    int ID;
+public class ToDo {
+    int userId;
+    int id;
     String title;
-    boolean completed;
+    Boolean completed;
 
-    public int getUserID() {
-        return userID;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUserID(int userID) {
-        this.userID = userID;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -30,19 +30,19 @@ public class Story {
         this.title = title;
     }
 
-    public boolean isCompleted() {
+    public Boolean getCompleted() {
         return completed;
     }
 
-    public void setCompleted(boolean completed) {
+    public void setCompleted(Boolean completed) {
         this.completed = completed;
     }
 
     @Override
     public String toString() {
-        return "Task{" +
-                "userID=" + userID +
-                ", ID=" + ID +
+        return "ToDo{" +
+                "userId=" + userId +
+                ", id=" + id +
                 ", title='" + title + '\'' +
                 ", completed=" + completed +
                 '}';
